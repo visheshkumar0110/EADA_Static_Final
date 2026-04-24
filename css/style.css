@@ -798,3 +798,103 @@ footer { background: var(--forest-green); color: #e2e8f0; padding: 4rem 5% 2rem;
         gap: 0.5rem;
     }
 }
+/* --- Team Section --- */
+.team-section { padding: 4rem 0; background: #ffffff; border-bottom: 1px solid var(--border-light); }
+.team-wrapper { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+.team-title { font-size: 1.8rem; font-weight: 800; color: var(--text-dark); margin-bottom: 2rem; text-transform: uppercase; letter-spacing: -0.5px; }
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.team-card {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #f59e0b; /* Matching the reference orange/gold border */
+    border-radius: 6px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.15);
+    gap: 1.5rem;
+}
+
+.team-avatar-box {
+    flex-shrink: 0;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #f1f5f9;
+}
+
+.team-avatar-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-name {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin: 0 0 0.25rem 0;
+    line-height: 1.2;
+}
+
+.team-designation {
+    font-size: 0.95rem;
+    color: #475569;
+    margin: 0 0 1rem 0;
+}
+
+.team-contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+}
+
+.team-contact-item svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5rem;
+    color: #0f172a;
+}
+
+.team-view-profile {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.team-view-profile:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .team-contact-item {
+        justify-content: center;
+    }
+}
