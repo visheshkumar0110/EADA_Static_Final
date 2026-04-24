@@ -85,7 +85,16 @@
             </button>
             <ul class="nav-links" id="nav-menu">
                 <li><a href="index.html" class="nav-link active" data-i18n="navHome">Home</a></li>
-                <li><a href="about.html" class="nav-link" data-i18n="navAbout">About EADA</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="#" class="nav-link nav-dropdown-trigger" onclick="return false;">
+                        <span data-i18n="navAbout">About</span> 
+                        <span class="dropdown-arrow">▾</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="about.html" class="dropdown-item">EADA</a>
+                        <a href="mechanism.html" class="dropdown-item">Mechanism for Certification</a>
+                    </div>
+                </li>
                 <li><a href="https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/sep/doc202593627401.pdf" target="_blank" class="nav-link" data-i18n="navRules">Environment Audit Rules 2025</a></li>
                 <li class="nav-item-dropdown">
                     <a href="#" class="nav-link nav-dropdown-trigger" onclick="return false;">
@@ -597,7 +606,7 @@
                     <h4 class="footer-heading" data-i18n="ftQuick">Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="index.html" data-i18n="ftHome">Home</a></li>
-                        <li><a href="about.html" data-i18n="ftAbout">About EADA</a></li>
+                        <li><a href="about.html" data-i18n="ftAbout">About</a></li>
                         <li><a href="https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/sep/doc202593627401.pdf" target="_blank" data-i18n="ftRules">Enviroment Audit Rules 2025</a></li>
                         <li><a href="#" data-i18n="ftNotices">Notices & Circulars</a></li>
                     </ul>
