@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Environment Audit Designated Agency (EADA) - Precise Reference Branding" />
+    <title>About EADA | Environment Audit Designated Agency</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="gov-strip">
+        <div class="container gov-strip-inner">
+            <div class="gov-left">
+                <img src="images/india-flag.png" alt="India Flag" class="india-flag">
+                <span>भारत सरकार | Government of India</span>
+            </div>
+            <div class="brand-right" style="gap: 1rem;">
+                <span style="border-right: 1px solid #ccc; padding-right: 10px;">A- A A+</span>
+                <div class="util-dropdown-wrap">
+                    <button class="util-dropdown-btn" id="lang-btn" aria-expanded="false" aria-haspopup="true">EN ▾</button>
+                    <div class="lang-menu" id="lang-menu">
+                        <a href="#" class="lang-item" id="lang-en">English</a>
+                        <a href="#" class="lang-item" id="lang-hi">हिन्दी</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="branding-strip">
+        <div class="container branding-inner">
+            <!-- Left Side: EADA + Ministry Text -->
+            <div class="brand-section branding-left">
+                <div class="eada-identity">
+                    <div class="brand-logo-box">
+                        <img src="images/branding/logo_eada.png" alt="EADA" class="eada-logo-main">
+                    </div>
+                    <div class="eada-text-block">
+                        <p class="eada-hindi">ई. ए. डी. ए.</p>
+                        <p class="eada-english"><strong>EADA</strong></p>
+                    </div>
+                </div>
+                
+                <div class="brand-divider-v"></div>
+
+                <div class="brand-logo-box">
+                    <img src="images/branding/logo_moefcc.png" alt="MoEFCC">
+                </div>
+
+                <div class="ministry-text-block">
+                    <p class="min-hindi">पर्यावरण, वन और जलवायु परिवर्तन मंत्रालय</p>
+                    <p class="min-english">Ministry of Environment, Forest and Climate Change</p>
+                </div>
+            </div>
+
+            <!-- Right Side: All Logos Group -->
+            <div class="brand-section branding-right">
+                <div class="brand-logo-box life-logo">
+                    <img src="images/branding/logo_life.png" alt="LiFE">
+                </div>
+                <a href="https://www.npcindia.gov.in/NPC/User/index" target="_blank" class="brand-logo-box npc-logo">
+                    <img src="images/branding/logo_npc.png" alt="NPC">
+                </a>
+                <div class="brand-logo-box">
+                    <img src="images/branding/logo_emblem.png" alt="Emblem">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="nav-overlay" class="nav-overlay"></div>
+
+    <nav class="navbar-wrap">
+        <div class="container nav-inner">
+            <button class="menu-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
+                <li><a href="about.html" class="nav-link active" data-i18n="navAbout">About EADA</a></li>
+                <li><a href="https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/sep/doc202593627401.pdf" target="_blank" class="nav-link" data-i18n="navRules">Environment Audit Rules 2025</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="#" class="nav-link nav-dropdown-trigger" onclick="return false;">
+                        <span data-i18n="navGuidelines">Guidelines</span> 
+                        <span class="dropdown-arrow">▾</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="docs/Guideline for CEA through RPL.pdf" target="_blank" class="dropdown-item" data-i18n="navCea">Guideline for CEA through RPL</a>
+                        <a href="docs/Guideline for REA.pdf" target="_blank" class="dropdown-item" data-i18n="navRea">Guideline for REA</a>
+                    </div>
+                </li>
+                <li><a href="index.html#media-section" class="nav-link" data-i18n="navMedia">Media</a></li>
+                <li><a href="files/team-details-demo.pdf" class="nav-link">Team</a></li>
+                <li><a href="#contact-section" class="nav-link" data-i18n="navContact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="notice-strip">
+        <div class="notice-badge" data-i18n="noticeLabel">Latest Update</div>
+        <div class="marquee-container">
+            <div class="marquee-text" data-i18n="noticeText">Application forms for CEA (RPL) & REA will be available soon.</div>
+        </div>
+    </div>
+
+    <section id="about-section" class="about-section">
+        <div class="about-wrapper">
+            <h2 class="about-title" data-i18n="aboutTitle">About Environment Audit Designated Agency</h2>
+            <div class="about-content-body">
+                <p data-i18n="aboutP1">The Environment Audit Designated Agency (EADA) has been established under the Environment Audit Rules, 2025, notified by the Ministry of Environment, Forest and Climate Change (MoEF&CC) on 29 August 2025. The EADA is responsible for the overall management of the environmental audit framework in India.</p>
+                <p data-i18n="aboutP2">The framework is designed to strengthen compliance with major environmental legislations, including the Environment (Protection) Act, 1986; Water (Prevention and Control of Pollution) Act, 1974; Air (Prevention and Control of Pollution) Act, 1981; Van (Sanrakshan Evam Samvardhan) Adhiniyam, 1980; the Wild Life (Protection) Act, 1972; and rules framed thereunder. It also supports compliance with regulatory approvals such as Environmental Clearance (EC), Consent to Establish (CTE), and Consent to Operate (CTO).</p>
+                <h3 class="about-subtitle" data-i18n="aboutRoles">Roles and Responsibilities of EADA</h3>
+                <p data-i18n="aboutRolesIntro" style="font-weight: 500; color: var(--text-dark); margin-bottom: 1.5rem;">The roles and responsibilities of the Environment Audit Designated Agency shall include, but not be limited to, the following:</p>
+                <ol type="i" class="roles-list">
+                    <li data-i18n="aboutRolesP1_1">Specifying minimum eligibility criteria for Certified Environment Auditors;</li>
+                    <li data-i18n="aboutRolesP1_2">Developing screening methodologies, which may include conducting examinations and/or other processes to identify qualified candidates for their certification as Certified Environment Auditor;</li>
+                    <li data-i18n="aboutRolesP1_3">Certifying environment auditors including renewal, suspension, withdrawal, or cancellation of such certifications;</li>
+                    <li data-i18n="aboutRolesP1_4">Specifying the criteria for registration of the Certified Environment Auditor;</li>
+                    <li data-i18n="aboutRolesP1_5">Registration of the Certified Environment Auditor including renewal, suspension, withdrawal, or cancellation of such registrations;</li>
+                    <li data-i18n="aboutRolesP1_6">Monitoring the performance of Registered Environment Auditor and issuing directions as necessary;</li>
+                    <li data-i18n="aboutRolesP1_7">Facilitating capacity building through training programs, workshops, seminars, conferences, online courses, and other relevant initiatives for Certified Environment Auditor and Registered Environment Auditor;</li>
+                    <li data-i18n="aboutRolesP1_8">Taking disciplinary action against Certified Environment Auditor and Registered Environment Auditor, wherever required;</li>
+                    <li data-i18n="aboutRolesP1_9">Specifying guidelines, procedures, and standards governing the functioning of Certified Environment Auditor and Registered Environment Auditor;</li>
+                    <li data-i18n="aboutRolesP1_10">Maintaining an online register of all Certified Environment Auditors and Registered Environment Auditors, which shall be publicly accessible;</li>
+                    <li data-i18n="aboutRolesP1_11">Publishing an annual report of its activities within six months from the end of each financial year, and submitting a copy of the report to the Central Government within thirty days of its publication.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact-section">
+        <div class="footer-fluid-wrapper">
+            <div class="footer-grid">
+                <!-- Column 1: QUICK LINKS -->
+                <div>
+                    <h4 class="footer-heading" data-i18n="ftQuick">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-i18n="ftHome">Home</a></li>
+                        <li><a href="about.html" data-i18n="ftAbout">About EADA</a></li>
+                        <li><a href="https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/sep/doc202593627401.pdf" target="_blank" data-i18n="ftRules">Enviroment Audit Rules 2025</a></li>
+                        <li><a href="#" data-i18n="ftNotices">Notices & Circulars</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: CONTACT US -->
+                <div>
+                    <h4 class="footer-heading" data-i18n="ftContact">Contact Us</h4>
+                    <div class="footer-contact">
+                        <p><strong data-i18n="ftPhone">Phone:</strong> 01124607306</p>
+                        <p><strong data-i18n="ftEmail">Email:</strong> <a href="mailto:eada.npc@npcindia.gov.in" style="color: #cbd5e1; text-decoration: none;">eada.npc&#64;npcindia.gov.in</a></p>
+                    </div>
+                </div>
+
+                <!-- Column 3: Address -->
+                <div>
+                    <h4 class="footer-heading" data-i18n="ftAddress">Address</h4>
+                    <div class="footer-contact">
+                        <p style="font-size: 0.9rem; line-height: 1.6; color: #cbd5e1; margin: 0;">
+                            Environment Audit Designated Agency<br />
+                            VIKRAM SARABHAI BLOCK<br />
+                            National Productivity Council,<br />
+                            Utpadakta Bhavan, 5-6, Institutional Area, Lodhi Rd, Lodi Colony, New Delhi, Delhi 110003
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Column 4: Map View -->
+                <div>
+                    <h4 class="footer-heading" data-i18n="ftMap">Map View</h4>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Environment+Audit+Designated+Agency+VIKRAM+SARABHAI+BLOCK+National+Productivity+Council+Utpadakta+Bhavan+5-6+Institutional+Area+Lodhi+Rd+New+Delhi+Delhi+110003" 
+                       target="_blank" rel="noopener noreferrer" class="footer-map-card">
+                        <img src="images/footer-map.png" alt="EADA Location Map" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom" data-i18n="ftCopyright">
+                &copy; 2026 Environment Audit Designated Agency. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

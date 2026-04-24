@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Environment Audit Designated Agency (EADA) - Precise Reference Branding" />
+    <title>EADA | Environment Audit Designated Agency</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="gov-strip">
+        <div class="container gov-strip-inner">
+            <div class="gov-left">
+                <img src="images/india-flag.png" alt="India Flag" class="india-flag">
+                <span>भारत सरकार | Government of India</span>
+            </div>
+            <div class="brand-right" style="gap: 1rem;">
+                <span style="border-right: 1px solid #ccc; padding-right: 10px;">A- A A+</span>
+                <div class="util-dropdown-wrap">
+                    <button class="util-dropdown-btn" id="lang-btn" aria-expanded="false" aria-haspopup="true">EN ▾</button>
+                    <div class="lang-menu" id="lang-menu">
+                        <a href="#" class="lang-item" id="lang-en">English</a>
+                        <a href="#" class="lang-item" id="lang-hi">हिन्दी</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="branding-strip">
+        <div class="container branding-inner">
+            <!-- Left Side: EADA + Ministry Text -->
+            <div class="brand-section branding-left">
+                <div class="eada-identity">
+                    <div class="brand-logo-box">
+                        <img src="images/branding/logo_eada.png" alt="EADA" class="eada-logo-main">
+                    </div>
+                    <div class="eada-text-block">
+                        <p class="eada-hindi">ई. ए. डी. ए.</p>
+                        <p class="eada-english"><strong>EADA</strong></p>
+                    </div>
+                </div>
+                
+                <div class="brand-divider-v"></div>
+
+                <div class="brand-logo-box">
+                    <img src="images/branding/logo_moefcc.png" alt="MoEFCC">
+                </div>
+
+                <div class="ministry-text-block">
+                    <p class="min-hindi">पर्यावरण, वन और जलवायु परिवर्तन मंत्रालय</p>
+                    <p class="min-english">Ministry of Environment, Forest and Climate Change</p>
+                </div>
+            </div>
+
+            <!-- Right Side: All Logos Group -->
+            <div class="brand-section branding-right">
+                <div class="brand-logo-box life-logo">
+                    <img src="images/branding/logo_life.png" alt="LiFE">
+                </div>
+                <a href="https://www.npcindia.gov.in/NPC/User/index" target="_blank" class="brand-logo-box npc-logo">
+                    <img src="images/branding/logo_npc.png" alt="NPC">
+                </a>
+                <div class="brand-logo-box">
+                    <img src="images/branding/logo_emblem.png" alt="Emblem">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="nav-overlay" class="nav-overlay"></div>
+
+    <nav class="navbar-wrap">
+        <div class="container nav-inner">
+            <button class="menu-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html" class="nav-link active" data-i18n="navHome">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="navAbout">About EADA</a></li>
+                <li><a href="https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/sep/doc202593627401.pdf" target="_blank" class="nav-link" data-i18n="navRules">Environment Audit Rules 2025</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="#" class="nav-link nav-dropdown-trigger" onclick="return false;">
+                        <span data-i18n="navGuidelines">Guidelines</span> 
+                        <span class="dropdown-arrow">▾</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="docs/Guideline for CEA through RPL.pdf" target="_blank" class="dropdown-item" data-i18n="navCea">Guideline for CEA through RPL</a>
+                        <a href="docs/Guideline for REA.pdf" target="_blank" class="dropdown-item" data-i18n="navRea">Guideline for REA</a>
+                    </div>
+                </li>
+                <li><a href="#media-section" class="nav-link" data-i18n="navMedia">Media</a></li>
+                <li><a href="files/team-details-demo.pdf" class="nav-link">Team</a></li>
+                <li><a href="#contact-section" class="nav-link" data-i18n="navContact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="notice-strip">
+        <div class="notice-badge" data-i18n="noticeLabel">Latest Update</div>
+        <div class="marquee-container">
+            <div class="marquee-text" data-i18n="noticeText">Application forms for CEA (RPL) & REA will be available soon.</div>
+        </div>
+    </div>
+
+    <section class="hero-banner-section">
+        <div class="banner-slider-container">
+            <button class="slider-arrow prev-arrow" id="slide-prev" aria-label="Previous Slide">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            
+            <div class="banner-track" id="banner-track">
+                <div class="banner-slide">
+                    <img src="images/branding/hero_banner_1.png" alt="EADA Official Delegation" />
+                </div>
+                <div class="banner-slide">
+                    <img src="images/branding/hero_banner_2.png" alt="Environment and Sustainable Energy" />
+                </div>
+                <div class="banner-slide">
+                    <img src="images/branding/hero_banner_3.png" alt="Environmental Research Laboratory" />
+                </div>
+                <div class="banner-slide">
+                    <img src="images/branding/hero_banner.jpg" alt="MoEFCC Official Portal" />
+                </div>
+            </div>
+
+            <button class="slider-arrow next-arrow" id="slide-next" aria-label="Next Slide">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            
+            <div class="slider-controls">
+                <button class="slider-pause" id="slide-pause" aria-label="Toggle Autoplay">
+                    <svg id="pause-icon" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                    <svg id="play-icon" style="display:none;" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="whats-new-section">
+        <div class="whats-new-wrapper">
+            <!-- Left Column: What's New -->
+            <div class="whats-new-left">
+                <div class="wn-tabs">
+                    <button class="wn-tab active">What's new</button>
+                    <button class="wn-tab">New Releases</button>
+                    <button class="wn-tab">Recruitment</button>
+                    <button class="wn-tab">Directions</button>
+                    <button class="wn-tab">order</button>
+                    <button class="wn-tab">Tenders</button>
+                </div>
+                <div class="wn-content">
+                    <h2 class="wn-main-title">What's New</h2>
+                    
+                    <div class="wn-list">
+                        <!-- Item 1 -->
+                        <div class="wn-item">
+                            <h3 class="wn-item-title">Employment Notification No. 01/2026 for the post of Junior Hindi Translator (JHT) - 609 <span class="wn-pdf-size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> Size : 1.95 MB</span></h3>
+                            <div class="wn-item-meta">
+                                <span><span class="wn-date-label">Start Date:</span> <span class="wn-date-value">Saturday April 18, 2026</span></span>
+                                <span><span class="wn-date-label">Last Date :</span> <span class="wn-date-value">Tuesday June 02, 2026</span></span>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="wn-item">
+                            <h3 class="wn-item-title">Vacancy for the post of Private Secretary & Junior Translator on Deputation Basis in Shillong Regional Office Circular - Reference - 608 <span class="wn-pdf-size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> Size : 1.84 MB</span></h3>
+                            <div class="wn-item-meta">
+                                <span><span class="wn-date-label">Start Date:</span> <span class="wn-date-value">Wednesday April 22, 2026</span></span>
+                                <span><span class="wn-date-label">Last Date :</span> <span class="wn-date-value">Friday, June 05, 2026</span></span>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="wn-item">
+                            <h3 class="wn-item-title">Extension of last date for inviting nominations for appointment of IFS officers on deputation basis to the post of Deputy Chief Executive Officer (Deputy CEO) of the rank of Deputy Inspector General of Forests (DIGF) level in the National Compensation Afforestation Fund Management and Planning Authority. - 607 <span class="wn-pdf-size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> Size : 1.95 MB</span></h3>
+                            <div class="wn-item-meta">
+                                <span><span class="wn-date-label">Start Date:</span> <span class="wn-date-value">Tuesday April 21, 2026</span></span>
+                                <span><span class="wn-date-label">Last Date :</span> <span class="wn-date-value">Sunday, May 10, 2026</span></span>
+                            </div>
+                        </div>
+                        
+                        <!-- Item 4 -->
+                        <div class="wn-item">
+                            <h3 class="wn-item-title">Extension of last date for inviting nominations for appointment of IFS officers to the post of Joint Chief Executive Officer (Joint CEO) of Inspector General of Forests (IGF) level on deputation basis in the National Compensatory Afforestation Fund Management and Planning Authority. - 606 <span class="wn-pdf-size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> Size : 1.95 MB</span></h3>
+                            <div class="wn-item-meta">
+                                <span><span class="wn-date-label">Start Date:</span> <span class="wn-date-value">Tuesday April 21, 2026</span></span>
+                                <span><span class="wn-date-label">Last Date :</span> <span class="wn-date-value">Sunday, May 10, 2026</span></span>
+                            </div>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="wn-item">
+                            <h3 class="wn-item-title">Extension of last date for inviting nominations for appointment of IFS officers at the level of Assistant Inspector General of Forests (AIGF) in the National Compensatory Afforestation Fund Management and Planning Authority [No. of Posts-Two (02)], on deputation basis. - 605 <span class="wn-pdf-size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> Size : 971.48 KB</span></h3>
+                            <div class="wn-item-meta">
+                                <span><span class="wn-date-label">Start Date:</span> <span class="wn-date-value">Monday April 20, 2026</span></span>
+                                <span><span class="wn-date-label">Last Date :</span> <span class="wn-date-value">Saturday May 30, 2026</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="wn-view-all">View All</button>
+                </div>
+            </div>
+
+            <!-- Right Column: DG Madam Profile Card -->
+            <div class="whats-new-right">
+                <div class="dg-profile-card">
+                    <div class="dg-image-container">
+                        <img src="images/dg_madam.png" alt="DG Madam" class="dg-image">
+                    </div>
+                    <h3 class="dg-name">Message from DG Madam</h3>
+                    <p class="dg-message">As the Director General of EADA, I welcome you to our official portal. We are dedicated to ensuring environmental compliance and promoting sustainable practices across the nation. Together, we can build a greener future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="modules-section" class="modules-section">
+        <div class="container">
+            <div class="mod-header">
+                <h2 data-i18n="modHeading">Mode of Certification / Registration</h2>
+            </div>
+            <div class="mod-grid">
+                <article class="official-card">
+                    <div class="mod-status-tag" data-i18n="modSoon1">Coming Soon</div>
+                    <div class="mod-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                            <path d="m9 12 2 2 4-4" />
+                        </svg>
+                    </div>
+                    <div class="mod-content">
+                        <h3 class="mod-title" data-i18n="ceaTitle">Certified Environment Auditor through Recognition of Prior Learning (RPL)</h3>
+                        <span class="card-action" data-i18n="modAccess1">Apply here &rarr;</span>
+                    </div>
+                </article>
+                <article class="official-card">
+                    <div class="mod-status-tag" data-i18n="modSoon2">Coming Soon</div>
+                    <div class="mod-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                    </div>
+                    <div class="mod-content">
+                        <h3 class="mod-title" data-i18n="reaTitle">Registered Environment Auditor (REA)</h3>
+                        <span class="card-action" data-i18n="modAccess2">Apply here &rarr;</span>
+                    </div>
+                </article>
+                <article class="official-card">
+                    <div class="mod-status-tag" data-i18n="modSoon3">Coming Soon</div>
+                    <div class="mod-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                        </svg>
+                    </div>
+                    <div class="mod-content">
+                        <h3 class="mod-title" data-i18n="nceTitle">National Certification Examination</h3>
+                        <span class="card-action" data-i18n="modAccess3">Apply here &rarr;</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="media-section" class="media-section">
+        <div class="media-bg-ornament"></div>
+        <div class="media-bg-ornament-left"></div>
+
+        <div class="media-header-wrap">
+            <h2 data-i18n="mediaTitle">Media Coverage</h2>
+            <div class="media-header-divider"></div>
+        </div>
+
+        <div class="media-carousel-wrapper">
+            <button class="nav-btn prev" id="media-prev" aria-label="Previous slide">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class="nav-btn next" id="media-next" aria-label="Next slide">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+
+            <div class="media-viewport">
+                <div class="media-track" id="media-track">
+                    <!-- 1. Construction World -->
+                    <div class="media-slide">
+                        <a href="https://www.constructionworld.in/policy-updates-and-economic-news/national-productivity-council-named-environment-audit-agency/88444" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #e11d48;">CW</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">CONSTRUCTION<br/>WORLD</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">National Productivity Council Named Environment Audit Agency</h3>
+                        </a>
+                    </div>
+                    <!-- 2. First Construction Council -->
+                    <div class="media-slide">
+                        <a href="https://firstconstructioncouncil.com/article/914774" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #0f172a;">FCC</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">FIRST CONSTRUCTION<br/>COUNCIL</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">NPC Named Designated Agency for Environment Audit Framework</h3>
+                        </a>
+                    </div>
+                    <!-- 3. Sanskriti IAS -->
+                    <div class="media-slide">
+                        <a href="https://www.sanskritiias.com/hindi/current-affairs/national-productivity-council" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #f59e0b;">IAS</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">SANSKRITI<br/>IAS ACADEMY</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">NPC Appointed as Environment Audit Designated Agency</h3>
+                        </a>
+                    </div>
+                    <!-- 4. Bankersadda -->
+                    <div class="media-slide">
+                        <a href="https://www.bankersadda.com/daily-current-affairs-quiz-24th-march-2026-check-important-questions-here/" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #2563eb;">BA</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">BANKERS<br/>ADDA 247</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">Daily Current Affairs: NPC Designated as Environment Audit Agency</h3>
+                        </a>
+                    </div>
+                    <!-- 5. Hindustan Times -->
+                    <div class="media-slide">
+                        <a href="https://www.hindustantimes.com/india-news/national-productivity-council-to-strengthen-environmental-compliance-mechanisms-101774084581634.html" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #0c4a6e;">HT</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">HINDUSTAN<br/>TIMES</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">NPC to Strengthen Environmental Compliance Mechanisms</h3>
+                        </a>
+                    </div>
+                    <!-- 6. Deccan Chronicle -->
+                    <div class="media-slide">
+                        <a href="https://www.deccanchronicle.com/nation/in-other-news/npc-to-act-as-designated-agency-for-environment-audit-1945349" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #0f172a;">DC</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">DECCAN<br/>CHRONICLE</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">NPC to Act as Designated Agency for Environment Audit</h3>
+                        </a>
+                    </div>
+                    <!-- 7. Financial Express -->
+                    <div class="media-slide">
+                        <a href="https://www.financialexpress.com/business/news/productivity-council-will-manage-environment-audit-framework/4180024/" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #0c4a6e;">FE</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">FINANCIAL<br/>EXPRESS</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">Productivity Council Will Manage Environment Audit Framework</h3>
+                        </a>
+                    </div>
+                    <!-- 8. Ziraat Times -->
+                    <div class="media-slide">
+                        <a href="https://ziraattimes.com/2026/03/npc-appointed-as-environment-audit-agency-to-strengthen-compliance-across-india/" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #065f46;">ZT</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">ZIRAAT<br/>TIMES</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">NPC Appointed as Environment Audit Agency to Strengthen Compliance</h3>
+                        </a>
+                    </div>
+                    <!-- 9. ABC Live -->
+                    <div class="media-slide">
+                        <a href="https://abclive.in/2026/03/21/npc-environment-audit-designated-agency-critical-analysis/" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #e11d48;">ABC</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">ABC<br/>LIVE</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">NPC Environment Audit Designated Agency : A Critical Analysis</h3>
+                        </a>
+                    </div>
+                    <!-- 10. Devdiscourse -->
+                    <div class="media-slide">
+                        <a href="https://www.devdiscourse.com/article/science-environment/3845716-national-productivity-council-champions-environmental-auditing" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #2563eb;">DEV</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">DEVDISCOURSE<br/>NEWS</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">NPC Champions Environmental Auditing Across India</h3>
+                        </a>
+                    </div>
+                    <!-- 11. MSN -->
+                    <div class="media-slide">
+                        <a href="https://www.msn.com/en-in/news/India/national-productivity-council-to-strengthen-environmental-compliance-mechanisms/ar-AA1Z6hAo" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #2563eb;">MSN</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">MSN<br/>INDIA</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">NPC to Lead National Environmental Audit Framework</h3>
+                        </a>
+                    </div>
+                    <!-- 12. The Balanced News -->
+                    <div class="media-slide">
+                        <a href="https://thebalanced.news/politics/ce8a26cd-2e3b-46eb-90de-20291441f779/national-productivity-council-designated-as-environment-audit-agency-under-2025-rules" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #0f172a;">BN</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">THE BALANCED<br/>NEWS</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">NPC Designated as Environment Audit Agency Under 2025 Rules</h3>
+                        </a>
+                    </div>
+                    <!-- 13. The News Hour -->
+                    <div class="media-slide">
+                        <a href="https://www.thenewshour.org/other-news/npc-signs-agreement-with-ministry-of-environment-forest-and-climate-change-moefcc-to-act-as-environment-audit-designated-agency/" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #e11d48;">NH</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">THE NEWS<br/>HOUR</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">NPC Signs Agreement with MoEFCC for National Environment Audit</h3>
+                        </a>
+                    </div>
+                    <!-- 14. Current Affairs (Adda247) -->
+                    <div class="media-slide">
+                        <a href="https://currentaffairs.adda247.com/what-the-npc-moefcc-agreement-means-for-environmental-governance/" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #f59e0b;">A247</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">CURRENT<br/>AFFAIRS ADDA</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">What the NPC-MoEFCC Agreement Means for Environmental Governance</h3>
+                        </a>
+                    </div>
+                    <!-- 15. IBC24 -->
+                    <div class="media-slide">
+                        <a href="https://www.ibc24.in/country/national-productivity-council-to-act-as-nodal-agency-for-environmental-audit-3518741.html" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #e11d48;">IBC</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">IBC24<br/>NEWS</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">NPC to Act as Nodal Agency for Environmental Audit</h3>
+                        </a>
+                    </div>
+                    <!-- 16. TaxTMI -->
+                    <div class="media-slide">
+                        <a href="https://www.taxtmi.com/news?id=71657" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #0c4a6e;">TMI</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">TAX TMI<br/>REPORTS</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">Environment Audit Rules 2025: NPC Named Designated Agency</h3>
+                        </a>
+                    </div>
+                    <!-- 17. Magzter -->
+                    <div class="media-slide">
+                        <a href="https://www.magzter.com/stories/newspaper/Financial-Express-Mumbai/PRODUCTIVITY-COUNCIL-TO-MANAGE-ENVIRONMENT-AUDIT-FRAMEWORK" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #0c4a6e;">MAG</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">MAGZTER<br/>PUBLICATIONS</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">Productivity Council Will Manage Environment Audit Framework</h3>
+                        </a>
+                    </div>
+                    <!-- 18. The Week -->
+                    <div class="media-slide">
+                        <a href="https://www.theweek.in/wire-updates/national/2026/03/21/national-productivity-council-to-act-as-designated-agency-for-environment-audit.html" target="_blank" rel="noopener noreferrer" class="media-card-ref">
+                            <div class="card-top-row">
+                                <div class="media-outlet-logo">
+                                    <span class="logo-text" style="color: #e11d48;">WEEK</span>
+                                    <span style="font-size: 0.75rem; font-weight: 800; margin-left: 6px; line-height: 1.1;">THE WEEK<br/>MAGAZINE</span>
+                                </div>
+                                <div class="external-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
+                            </div>
+                            <div class="card-dash"></div>
+                            <h3 class="media-ref-headline">National Productivity Council to Act as Designated Agency for Environment Audit</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="media-dots-ref" id="media-dots"></div>
+        </div>
+    </section>
+
+    <footer id="contact-section">
+        <div class="footer-fluid-wrapper">
+            <div class="footer-grid">
+                <!-- Column 1: QUICK LINKS -->
+                <div>
+                    <h4 class="footer-heading" data-i18n="ftQuick">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-i18n="ftHome">Home</a></li>
+                        <li><a href="about.html" data-i18n="ftAbout">About EADA</a></li>
+                        <li><a href="https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/sep/doc202593627401.pdf" target="_blank" data-i18n="ftRules">Enviroment Audit Rules 2025</a></li>
+                        <li><a href="#" data-i18n="ftNotices">Notices & Circulars</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: CONTACT US -->
+                <div>
+                    <h4 class="footer-heading" data-i18n="ftContact">Contact Us</h4>
+                    <div class="footer-contact">
+                        <p><strong data-i18n="ftPhone">Phone:</strong> 01124607306</p>
+                        <p><strong data-i18n="ftEmail">Email:</strong> <a href="mailto:eada.npc@npcindia.gov.in" style="color: #cbd5e1; text-decoration: none;">eada.npc&#64;npcindia.gov.in</a></p>
+                    </div>
+                </div>
+
+                <!-- Column 3: Address -->
+                <div>
+                    <h4 class="footer-heading" data-i18n="ftAddress">Address</h4>
+                    <div class="footer-contact">
+                        <p style="font-size: 0.9rem; line-height: 1.6; color: #cbd5e1; margin: 0;">
+                            Environment Audit Designated Agency<br />
+                            VIKRAM SARABHAI BLOCK<br />
+                            National Productivity Council,<br />
+                            Utpadakta Bhavan, 5-6, Institutional Area, Lodhi Rd, Lodi Colony, New Delhi, Delhi 110003
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Column 4: Map View -->
+                <div>
+                    <h4 class="footer-heading" data-i18n="ftMap">Map View</h4>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Environment+Audit+Designated+Agency+VIKRAM+SARABHAI+BLOCK+National+Productivity+Council+Utpadakta+Bhavan+5-6+Institutional+Area+Lodhi+Rd+New+Delhi+Delhi+110003" 
+                       target="_blank" rel="noopener noreferrer" class="footer-map-card">
+                        <img src="images/footer-map.png" alt="EADA Location Map" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom" data-i18n="ftCopyright">
+                &copy; 2026 Environment Audit Designated Agency. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
